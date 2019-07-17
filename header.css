@@ -1,7 +1,10 @@
 *{margin:0;padding:0;}
 .top{
+    display: flex;
+   
     height:70px;
     width:auto;
+    min-width: 1279px;
     background-color:#000;
 }
 .logo1{
@@ -22,47 +25,52 @@
      letter-spacing:3px;
 }
 .nav{
-   margin-left: 200px;
+    padding-left:34px;
+    margin-top: 27px;
+    display: inline-block;
+    width: 50%;
+    height: 50px;
 }
 .nav-1{
-    float: left;
+    float: left; 
+    padding: 0px 20px;
     list-style:none;
     font-size:14px; 
     color:#ccc;
-    margin: -23px -80px 30px 133px;
+    height: 25px;
+    width: auto;
+    /* margin: -30px 5px 175px 40px; */
+}
+.nav-1 a{
+    font-size:14px; 
+    color:#ccc;
+    text-decoration: none;
+    
 }
 em{
     font-style: normal;
 }
-.nav-1:hover{
+.nav-1 a:hover{
    cursor: pointer;
    color:white; 
+}
+#serach
+{
+    display: inline-block;
 }
 #serach>input{
     width: 153px;
     height: 29px;
     border-radius: 32px;
-    float: right;
-    margin-top:-31px;
-    margin-right:241px;
-    /* background-image: url(img/header/search1.png);
+    float: right; 
+    margin-top:18px;
+    margin-left: -104px;
+    background-image: url(img/header/search1.png);
     background-repeat: no-repeat;
     background-size: 15px;
-    background-position: 10px 8px; */
+    background-position: 126px 8px;
 }
-/* .se{
-    position: absolute;
-    margin-top:5px;
-    margin-left: 5px;
-} */
-#input_after::after
-{
-    width: 45px;
-    height: 40px;
-    display: inline-block;
-    position: relative;
-    content: "jjjjjjjjjjjjjjjjjjjjjjj";
-    background:white url(img/header/search1.png) no-repeat scroll;
-    left: 55px;
-    top: 15px;
+.nav1{
+    margin-top:32px;
+    padding-left:21px; 
 }

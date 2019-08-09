@@ -1,7 +1,6 @@
 *{margin:0;padding:0;}
 .top{
     display: flex;
-   
     height:70px;
     width:auto;
     min-width: 1279px;
@@ -12,20 +11,20 @@
     height:35px;
     border-radius:50%;
     margin-top:17px;
-    margin-left:130px;
+    margin-left:120px;
 }
 .logo1_t{
     text-decoration: none;
-    font-size:23px;
+    font-size:21px;
     color:white;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
-    margin-left: 174px;
-     margin-top:-40px; 
-     letter-spacing:3px;
+    margin-left: 159px;
+    margin-top:-40px; 
+    letter-spacing:3px;
 }
 .nav{
-    padding-left:34px;
+    padding-left:8px;
     margin-top: 27px;
     display: inline-block;
     width: 50%;
@@ -72,5 +71,20 @@ em{
 }
 .nav1{
     margin-top:32px;
-    padding-left:21px; 
+    padding-left:15px; 
+}
+ul.nav1>li:nth-child(2)>ul{
+    position: absolute;
+    right:30px;
+    list-style: none;
+    width: 125px;
+    line-height: 30px;
+    padding-left: 20px;
+    background-color: #000; 
+}
+ul.nav1>li:nth-child(2)>ul{
+    display:none;
+}
+ul.nav1>li:nth-child(2):hover>ul{
+    display: block;
 }

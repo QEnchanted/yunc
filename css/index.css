@@ -31,11 +31,11 @@ body{
     width: 1349px;
     height: 336px;
     background-color:lightblue;
-  
+    position: relative; 
 }
 #car{
     overflow: hidden; 
-    position: relative;  
+    position: relative; 
     width: 730px;
     margin: 0 auto;
 }
@@ -56,14 +56,14 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     top:50%;
-    margin-top:-158px; 
+    margin-top:-30px; 
 }
 #btn-left{
-    background-image: url("img/index/left_ar.png");
+    background-image: url("../img/index/left_ar.png");
     left:100px;
 }
 #btn-right{
-    background-image: url("img/index/right_ar.png");
+    background-image: url("../img/index/right_ar.png");
     left:1170px;
 }
 #ul-idxs{
@@ -88,27 +88,30 @@ body{
 
 #gedan{
     width:729px;
-    height:1425px;
+    height:1700px;
     background-color:white;
     margin-left: 185px;
 }
-#gd1{
+#gedan #gd1{
     width: 689px;
     height:523px;
     margin: 20px;
     background-color: lightblue;
 }
-#tit{
+#gedan #gd1>#tit{
     height: 35px;
     border-bottom: 2px solid rgb(158, 27, 27);
     position: relative;
 }
-#tab{
+#gedan #gd1>#tit #tab{
     width: 240px;
     height: 16px;
     float: left;
     margin-left: 160px;
     padding-top:7px;
+}
+#gedan #gd1>#tit #tab i{
+    font-style: normal;
 }
 .lo{
     width: 25px;
@@ -143,6 +146,9 @@ body{
     float: left;
     padding:20px 0px 13px 26px;
 }
+.u-cover>.u-cover1 .u-text{
+    font-size: 15px;
+}
 img.tu{
     width:140px;
     height:140px;
@@ -154,9 +160,79 @@ img.tu{
     margin-left: 20px;
     margin-top:80px;
 }
-#album{
+#gedan #gd2>#tit{
+    height: 35px;
+    border-bottom: 2px solid rgb(158, 27, 27);
+    position: relative;
+}
+/* 轮播 */
+#gedan #gd2 #album{
     width:687px;
     height: 186px;
-    background-color: pink;
+    background-color:#f5f5f5;
     margin-top:20px;
+    position: relative;
+}
+#gedan #gd2 #album #al-lun{
+    width: 645px;
+    height: 180px;
+    overflow: hidden;
+    margin: auto;
+    
+}
+#gedan #gd2 #album #al-lun #al-imgs {
+   width: 2580px;
+   height: 155px; 
+   /* float: left; */
+} 
+#gedan #gd2 #album #al-lun #al-imgs .al-li{
+    width: 645px;
+    list-style: none;
+    float: left;
+}
+#gedan #gd2 #album #al-lun #al-imgs .al-li ul{
+    width: 645px;
+    height: 150px;
+}
+ #gedan #gd2 #album>#al-lun #al-imgs .al-li .al-tu{  
+    float: left; 
+    margin-left: 10px;
+    display: block;
+    width:118px;
+    height: 100px;
+    margin-top:20px;
+} 
+#gedan #gd2 #album #al-lun ul .al-tu i{
+    font-style: normal;
+    display: block;
+    font-size:13px;
+    color:black;
+    list-style: none;
+}
+#gedan #gd2 #album  #left,
+#gedan #gd2 #album #right{
+    width:30px;
+    height:30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    position: absolute;   
+}  
+#gedan #gd2 #album #left{
+    background-image: url("../img/al/left.png");
+    margin-top:66px; 
+}
+#gedan #gd2 #album #right{
+    float:right;
+    background-image: url("../img/al/right.png");
+    left:662px;
+    margin-top:-114px;
+} 
+#al-imgs.transition{
+    transition:all .5s linear;
+  }
+#gedan #gd3{
+    width: 689px;
+    height: 527px;
+    background-color: paleturquoise;
+    margin-top: 40px;
 }

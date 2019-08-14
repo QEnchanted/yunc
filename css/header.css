@@ -38,16 +38,28 @@
     color:#ccc;
     height: 25px;
     width: auto;
-    /* margin: -30px 5px 175px 40px; */
+}
+.top ul.nav>li.nav-1:nth-child(6){
+    position: relative;   
+}
+.top ul.nav>li.nav-1:nth-child(6):hover .nav-ewm{
+    display: block;
+}
+.top .nav .nav-1 .nav-ewm{
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    text-align: center;
+    margin-top:30px;
+    margin-left: -14px;
+    z-index: 100;
+    position: absolute;
+    display: none;
 }
 .nav-1 a{
     font-size:14px; 
     color:#ccc;
-    text-decoration: none;
-    
-}
-em{
-    font-style: normal;
+    text-decoration: none;   
 }
 .nav-1 a:hover{
    cursor: pointer;
@@ -64,14 +76,15 @@ em{
     float: right; 
     margin-top:18px;
     margin-left: -104px;
-    background-image: url(img/header/search1.png);
+    background-image: url("../img/header/search1.png");
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: 126px 8px;
 }
 .nav1{
     margin-top:32px;
-    padding-left:15px; 
+    padding-left:38px; 
+    
 }
 ul.nav1>li:nth-child(2)>ul{
     position: absolute;
@@ -84,7 +97,25 @@ ul.nav1>li:nth-child(2)>ul{
 }
 ul.nav1>li:nth-child(2)>ul{
     display:none;
+    z-index: 100;
 }
 ul.nav1>li:nth-child(2):hover>ul{
+    display: block;
+}
+ul.nav1>li:nth-child(6){
+    position: relative;
+}
+ul.nav>li.nav-1:nth-child(6) .erwm{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 30px;
+    margin-left: -25px;
+    display: none;
+}
+ul.nav>li.nav-1:nth-child(6):hover .erwm{
     display: block;
 }

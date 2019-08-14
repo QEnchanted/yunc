@@ -82,6 +82,7 @@ ulIdxs.onclick=function(e){
                    }
                }
                moveTo(i);
+               canClick=false;
                setTimeout(function(){
                    canClick=true;
                },DURATION)

@@ -88,7 +88,7 @@ body{
 
 #gedan{
     width:729px;
-    height:1700px;
+    height:1525px;
     background-color:white;
     margin-left: 185px;
 }
@@ -172,6 +172,7 @@ img.tu{
     background-color:#f5f5f5;
     margin-top:20px;
     position: relative;
+    border: 1px solid #ccc;
 }
 #gedan #gd2 #album #al-lun{
     width: 645px;
@@ -232,7 +233,71 @@ img.tu{
   }
 #gedan #gd3{
     width: 689px;
-    height: 527px;
-    background-color: paleturquoise;
-    margin-top: 40px;
+    height: 600px;
+    /* background-color: paleturquoise; */
+    margin-top: 76px;
+    margin-left: 20px;
+    position: relative;
+}
+#gedan #gd3>#tit{
+    height: 35px;
+    border-bottom: 2px solid rgb(158, 27, 27);
+    position: relative;
+}
+#gedan #gd3 table{
+    width: 689px;
+    height: 474px;
+    background-color: #f5f5f5;
+    position: absolute;
+    margin-top:30px;
+    border:1px solid #ccc;
+    border-collapse:collapse; 
+}
+#gedan #gd3 table th{
+    height: 120px;
+    border-right: 1px solid #ccc;
+}
+#gedan #gd3 table td{
+    height: 32px;
+    font-size:13px;
+    border-right:1px solid #ccc;
+}
+ #gedan #gd3 table tr:nth-child(2n){
+    background-color: rgb(233, 231, 231);
+} 
+#gedan #gd3 table .t-img{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 15px;
+}
+#gedan #gd3 table .t-text{
+    width: 116px;
+    height: 51px;
+    margin-left:103px;
+}
+#gedan #gd3 table th .t-text a{
+    font-size:14px;
+    color:#333;
+    text-decoration: none;
+}
+#gedan #gd3 table tr .tr-a{
+    text-decoration: none;
+    color: #333;
+    margin-left: 27px;
+}
+#gedan #gd3 table tr .tr-at{
+    text-decoration: none;
+    color: #333;
+    margin-left: 146px;
+}
+#gedan #gd3 table tr .tr-a .tr-tu{
+    width: 18px;
+    height:18px;
+    float: right;
+    margin-right: 5px;
+    display: none;
+}
+#gedan #gd3 table tr td:hover .tr-tu{
+    display: block;
 }

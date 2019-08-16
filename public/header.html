@@ -78,6 +78,8 @@
 </div> 
 <div class="blank_out">
   </div>
+  <!-- 登录 -->
+<form method='post' action='/user/login'>
 <div id="blank">
   <table>
     <tr>
@@ -98,7 +100,7 @@
     </tr>
     <tr>
       <td colspan="2">
-        <input class="uname" id="uname" type="text" placeholder="请输入用户名">
+        <input name="uname" class="uname" id="uname" type="text" placeholder="请输入用户名">
       </td>
     </tr>
     <tr height="10px">
@@ -108,7 +110,7 @@
     </tr>
     <tr>
       <td colspan="2">
-        <input class="upwd" id="upwdss" type="text" placeholder="请输入密码">
+        <input name="upwd" class="upwd" id="upwdss" type="text" placeholder="请输入密码">
       </td>
     </tr>
     <tr height="10px">
@@ -134,6 +136,7 @@
     </tr>
   </table>
   </div>
+<form>
 
 <script src="js/login.js"></script>
 </body>

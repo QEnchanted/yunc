@@ -34,8 +34,8 @@ function hide()
 	var lo1= document.getElementsByClassName("blank_out")[0];
 	lil.style.display="none";
 	lo1.style.display="none";
-	uname.value="";
-	upwdss.value="";
+	// uname.value="";
+	// upwdss.value="";
 	namess.innerHTML="";
 	pwdss.innerHTML="";
 }
@@ -56,7 +56,7 @@ function hide()
 				pwdss.innerHTML="密码格式不正确";
 			}
 			else{
-				alert("登录成功");
+				// alert("登录成功");
 				hide();
 			}
 		}

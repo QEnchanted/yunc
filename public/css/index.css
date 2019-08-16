@@ -4,7 +4,8 @@ body{
 }
 #db{
     background-color:#c20c0c;
-    width:1349px;
+    min-width:1349px;
+    width: 100%;
     height:35px;
 }
 #db>ul{
@@ -28,10 +29,11 @@ body{
 
 /* 轮播图 */
 #lunb{
-    width: 1349px;
+    min-width:1349px;
+    width: 100%;
     height: 336px;
     background-color:lightblue;
-    position: relative; 
+   display: flex;
 }
 #car{
     overflow: hidden; 
@@ -54,9 +56,7 @@ body{
     height:60px;
     cursor: pointer;
     background-repeat: no-repeat;
-    position: absolute;
-    top:50%;
-    margin-top:-30px; 
+   margin: auto;
 }
 #btn-left{
     background-image: url("../img/index/left_ar.png");
@@ -86,11 +86,27 @@ body{
     background-color:red;
 }
 
-#gedan{
+/* 中间主要布局部分 */
+#middle{
+    min-width:1349px;
+    width: 100%;
+    height:1525px;
+    display: flex;
+}
+#middle #gedan{
     width:729px;
     height:1525px;
     background-color:white;
     margin-left: 185px;
+}
+#middle #sing{
+    width:250px;
+    height: 777px;
+    background-color: white;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top:50px;
+    border:1px solid #ccc;
 }
 #gedan #gd1{
     width: 689px;
@@ -325,15 +341,7 @@ img.tu{
 .but>a:active{
     color:#a5a1a1;
 }
-#sing{
-    width:250px;
-    height: 777px;
-    float: right;
-    margin-right:145px;
-    background-color: white;
-    margin-top: -1501px;
-    border:1px solid #ccc;
-}
+
 #sing>.hd3{
     width: 210px;
     height:24px;

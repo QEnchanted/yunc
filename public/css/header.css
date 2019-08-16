@@ -2,7 +2,7 @@
 .top{
     display: flex;
     height:70px;
-    width:auto;
+    width:100%;
     min-width: 1279px;
     background-color:#000;
 }
@@ -38,7 +38,20 @@
     color:#ccc;
     height: 25px;
     width: auto;
+    
 }
+ul.nav1>li.nav-1:nth-child(2){
+    position: relative;
+}
+ul.nav1>li:nth-child(2)>ul{
+    position: absolute;
+    list-style: none;
+    width: 125px;
+    line-height: 40px;
+    padding-left: 20px;
+    background-color: #000; 
+}
+
 .top ul.nav>li.nav-1:nth-child(6){
     position: relative;   
 }
@@ -86,16 +99,7 @@
     padding-left:38px; 
     
 }
-ul.nav1>li:nth-child(2)>ul{
-    position: absolute;
-    right:30px;
-    list-style: none;
-    width: 125px;
-    line-height: 40px;
-    margin-left: 10px;
-    padding-left: 20px;
-    background-color: #000; 
-}
+
 ul.nav1>li:nth-child(2)>ul{
     display:none;
     z-index: 100;

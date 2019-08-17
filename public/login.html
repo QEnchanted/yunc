@@ -7,64 +7,68 @@
 	<link rel="stylesheet" href="css/login.css">
  </head>
  <body>
+<form method='post' action='/user/login'>
   <div id="container">
 		<table></table>
-		<div class="black">
-		<table>
-			<tr>
-				<td ><p class="den">登录网易云</p></td>
-				<td align="left">
-				<span>
-				<a href="#">新用户注册</a>
-                </span>
-                <a href="jsvascript:;">
-                    <img style="float: right;margin-top:-19px;" src="img/login/de1.png" />
-                </a>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-				<hr>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<input class="uname" id="uname" type="text" placeholder="请输入用户名">
-				</td>
-			</tr>
-			<tr height="10px">
-				<td colspan="2" >
-					<p  class="den" id="namess" style="color:red;font-size:15px;"></p>
-				</td>				
-			</tr>
-			<tr>
-				<td colspan="2">
-					<input class="upwd" id="upwdss" type="text" placeholder="请输入密码">
-				</td>
-			</tr>
-			<tr height="10px">
-				<td colspan="2" >
-					<p class="den" id="pwdss" style="color:red;font-size:15px;"></p>
-				</td>	
-			</tr>
-			<tr>
-				<td id="auto">
-					<input  type="checkbox">
-					<label for="auto">自动登录</label>
-				</td>
-				<td id="auto" align="right">
-					<span><a href="#">忘记密码?</a></span>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2">
-					<button class="view">登录</button>
-				</td>
-			</tr>
-		</table>
-		</div>
-	</div>
-   <script src="js/login.js"> </script>
+		  <!-- 登录 -->
+
+	<div id="blank">
+	  <table>
+		<tr>
+		  <td ><p class="den">登录网易云</p></td>
+		  <td align="left">
+		  <a class="mi" href="#">新用户注册</a>		
+				  <a id="del" href="index.html">
+					  <img class="del-img" src="img/login/de1.png" />
+				  </a>
+		  </td>
+		</tr>
+		<tr>
+		  <td colspan="2">
+		  <hr>
+		  </td>
+		</tr>
+		<tr>
+		  <td colspan="2">
+			<input name="uname" class="uname" id="uname" type="text" placeholder="请输入用户名">
+		  </td>
+		</tr>
+		<tr height="10px">
+		  <td colspan="2" >
+			<p  class="den" id="namess" style="color:red;font-size:15px;"></p>
+		  </td>				
+		</tr>
+		<tr>
+		  <td colspan="2">
+			<input name="upwd" class="upwd" id="upwdss" type="text" placeholder="请输入密码">
+		  </td>
+		</tr>
+		<tr height="10px">
+		  <td colspan="2" >
+			<p class="den" id="pwdss" style="color:red;font-size:15px;"></p>
+		  </td>	
+		</tr>
+		<tr>
+		  <td id="auto">
+			<input  type="checkbox">
+			<label for="auto">自动登录</label>
+		  </td>
+		  <td id="auto" align="right">
+			<!-- <span> -->
+			  <a class="mi" href="#">忘记密码?</a>
+			<!-- </span> -->
+		  </td>
+		</tr>
+		<tr>
+		  <td colspan="2">
+			<button id="login" class="view">登录</button>
+		  </td>
+		</tr>
+	  </table>
+	  </div>
+	<form>
+   <script src="js/login.js"></script>
+	 </script>
  </body>
 </html>
 

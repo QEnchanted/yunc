@@ -7,8 +7,12 @@ const userRouter=require('./routes/user.js');
 const bodyParser=require('body-parser');
 var app=express();
 app.listen(8080);
+// const cors = require("cors");
 
 //托管静态资源到public目录下
+// app.use(cors({   解决跨域错误
+// 	origin:"http://127.0.0.1:5502"
+// }))
 app.use(express.static('public'));
 //使用body-parser中间件
 app.use(bodyParser.urlencoded({

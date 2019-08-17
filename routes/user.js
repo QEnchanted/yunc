@@ -18,9 +18,10 @@ router.post('/login',function(req,res){
 		console.log(result);
 		//判断数据长度会否大于0
 		if(result.length>0){
-			res.redirect("../index.html")
+			res.redirect("../index.html");
+			
 		}else{
-			res.redirect("../header.html")
+			res.redirect("../login.html");
 		}
 	});
 });

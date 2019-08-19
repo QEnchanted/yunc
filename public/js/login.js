@@ -38,7 +38,7 @@
 // 			// 	// hide();
 // 			// }
 // 		}
-		document.body.onmousemove=function (){	
+		document.getElementById("blank").onmousemove=function (){	
 			var reg = /^\w{3,8}$/;
 			console.log(uname.value,namess.innerHTML);
 			   if(uname.value==""){

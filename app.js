@@ -2,6 +2,7 @@ const express=require('express');
 //引入用户路由器,引入目录下的模块
 const userRouter=require('./routes/user.js');
 //引入商品路由器
+const details = require("./routes/details");
 //const productRouter=require('./routes/product.js');
 //引入body-parser中间件
 const bodyParser=require('body-parser');
@@ -22,4 +23,5 @@ app.use(bodyParser.urlencoded({
 //使用路由器
 //  /user/reg
 app.use('/user',userRouter);
+app.use("/details",details);
 //app.use('/product',productRouter)

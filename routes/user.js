@@ -18,13 +18,29 @@ router.post('/login',function(req,res){
 		console.log(result);
 		//判断数据长度会否大于0
 		if(result.length>0){
-			res.redirect("../index.html");
-			
+			res.redirect("../index.html");			
 		}else{
 			res.redirect("../login.html");
 		}
 	});
 });
+
+//用户注册
+router.post('/reg',function(req,res){
+	//获取数据
+	var obj = req.body;
+	//执行sql语句
+	pool.query('INSERT INTO login SET ?',[obj],function(err,result){
+		if(err) throw err;
+		console.log(result);
+		if(result.affectedRows>0){
+			res.redirect("../login.html");
+		}else{
+			res.redirect("../reg.html");
+		}
+	});
+});
+
 
 
 //导出路由器
